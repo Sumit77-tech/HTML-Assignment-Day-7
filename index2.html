@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Periodic Table Grid</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: repeat(18, 1fr); 
+      grid-template-rows: repeat(7, auto); 
+      gap: 5px;
+      margin: 20px;
+      text-align: center;
+    }
+
+    .element {
+      padding: 10px;
+      border: 1px solid #000;
+      background-color: #f0f0f0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 14px;
+    }
+    .group-1 { background-color: red; color: white; }
+    .group-2 { background-color: orange; color: white; }
+    .group-3 { background-color: yellow; }
+    .group-4 { background-color: green; color: white; }
+    .group-5 { background-color: blue; color: white; }
+    .group-6 { background-color: purple; color: white; }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="element group-1">H</div>
+    <div class="element group-1">Li</div>
+    <div class="element group-1">Na</div>
+    <div class="element group-1">K</div>
+    <div class="element group-1">Rb</div>
+    <div class="element group-1">Cs</div>
+    <div class="element group-1">Fr</div>
+
+    <div class="element group-2">Be</div>
+    <div class="element group-2">Mg</div>
+    <div class="element group-2">Ca</div>
+    <div class="element group-2">Sr</div>
+    <div class="element group-2">Ba</div>
+    <div class="element group-2">Ra</div>
+
+    <div class="element group-3">Sc</div>
+    <div class="element group-3">Ti</div>
+    <div class="element group-3">V</div>
+
+    <div class="element group-4">He</div>
+    <div class="element group-4">Ne</div>
+  </div>
+</body>
+</html>
