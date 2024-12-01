@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>3x2 Grid Layout</title>
+  <style>
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr 1fr; 
+      grid-template-rows: auto auto; 
+      gap: 10px; 
+      padding: 20px;
+    }
+
+    .item {
+      border: 2px solid black; 
+      padding: 20px; 
+      color: white;
+      text-align: center;
+      font-size: 18px;
+      font-weight: bold;
+    }
+    .item:nth-child(1) { background-color: #ff6f61; } /* Red */
+    .item:nth-child(2) { background-color: #6b5b95; } /* Purple */
+    .item:nth-child(3) { background-color: #88b04b; } /* Green */
+    .item:nth-child(4) { background-color: #f7cac9; } /* Pink */
+    .item:nth-child(5) { background-color: #92a8d1; } /* Blue */
+    .item:nth-child(6) { background-color: #ffcc5c; } /* Yellow */
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="item">Item 1</div>
+    <div class="item">Item 2</div>
+    <div class="item">Item 3</div>
+    <div class="item">Item 4</div>
+    <div class="item">Item 5</div>
+    <div class="item">Item 6</div>
+  </div>
+</body>
+</html>
